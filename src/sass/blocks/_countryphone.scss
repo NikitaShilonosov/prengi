@@ -1,0 +1,50 @@
+// Основные стили
+.country {
+    padding-top: 19px;
+    margin-bottom: 16px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        display: flex;
+    }
+    &__descr {
+        padding-left: 11px;
+    }
+    &__head {
+        font-size: 14px;
+        font-weight: 700;
+        color: #242424;
+    }
+    &__phone {
+        font-size: 12px;
+        font-weight: 300;
+        color: #242424;
+        a {
+            color: #242424;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+    &__email {
+        font-size: 12px;
+        font-weight: 300;
+        color: #242424;
+    }
+    &__adress {
+        font-size: 12px;
+        font-weight: 300;
+        color: #242424;
+    }
+
+    /* Мобильная адаптация */
+
+    @media (max-width: 1200px) {
+        .container {
+            max-width: 960px;
+        }
+            display: none;
+    }
+}

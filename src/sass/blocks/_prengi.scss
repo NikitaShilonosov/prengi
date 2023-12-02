@@ -1,0 +1,67 @@
+.prengi {
+    height: 896px;
+    &__top {
+        display: flex;
+        padding-top: 73px;
+        gap: 31px;
+        /* Обращаемся к дочерним элементам блока что бы задать им бэкграунд */
+        .prengi__item:nth-child(1) {
+            background-image: url('../../img/prengi/kalendar.png');
+            object-fit: cover;
+        }
+        .prengi__item:nth-child(2) {
+            background-image: url('../../img/prengi/shema.png');
+            object-fit: cover;
+        }
+        .prengi__item:nth-child(3) {
+            background-image: url('../../img/prengi/lupa.png');
+            object-fit: cover;
+        }
+    }
+    &__item {
+        text-align: center;
+        width: 360px;
+        height: 255px;
+    }
+    &__descr {
+        padding-top: 176px;
+        font-size: 18px;
+        font-weight: 300;
+        color: #393939;
+    }
+    &__arrow {
+        text-align: center;
+        padding-top: 50px;
+    }
+    &__text {
+        padding-top: 33px;
+        font-size: 48.1px;
+        font-weight: 700;
+        color: #393939;
+    }
+    &__bot {
+        display: flex;
+        padding-top: 37px;
+        gap: 31px;
+        /* Обращаемся к дочерним элементам блока что бы задать им бэкграунд */
+        .prengi__item:nth-child(1) {
+            background-image: url('../../img/prengi/telephone.png');
+            object-fit: cover;
+        }
+        .prengi__item:nth-child(2) {
+            background-image: url('../../img/prengi/castle.png');
+            object-fit: cover;
+        }
+        .prengi__item:nth-child(3) {
+            background-image: url('../../img/prengi/oblako.png');
+            object-fit: cover;
+        }
+    }
+    &__bold {
+        padding-top: 176px;
+        font-size: 18px;
+        font-weight: 700;
+        color: #393939;
+    }
+
+}
