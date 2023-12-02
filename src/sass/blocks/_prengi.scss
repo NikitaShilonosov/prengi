@@ -6,15 +6,15 @@
         gap: 31px;
         /* Обращаемся к дочерним элементам блока что бы задать им бэкграунд */
         .prengi__item:nth-child(1) {
-            background-image: url('../../img/prengi/kalendar.png');
+            background-image: url('../img/prengi/kalendar.png');
             object-fit: cover;
         }
         .prengi__item:nth-child(2) {
-            background-image: url('../../img/prengi/shema.png');
+            background-image: url('../img/prengi/shema.png');
             object-fit: cover;
         }
         .prengi__item:nth-child(3) {
-            background-image: url('../../img/prengi/lupa.png');
+            background-image: url('../img/prengi/lupa.png');
             object-fit: cover;
         }
     }
@@ -45,15 +45,15 @@
         gap: 31px;
         /* Обращаемся к дочерним элементам блока что бы задать им бэкграунд */
         .prengi__item:nth-child(1) {
-            background-image: url('../../img/prengi/telephone.png');
+            background-image: url('../img/prengi/telephone.png');
             object-fit: cover;
         }
         .prengi__item:nth-child(2) {
-            background-image: url('../../img/prengi/castle.png');
+            background-image: url('../img/prengi/castle.png');
             object-fit: cover;
         }
         .prengi__item:nth-child(3) {
-            background-image: url('../../img/prengi/oblako.png');
+            background-image: url('../img/prengi/oblako.png');
             object-fit: cover;
         }
     }
