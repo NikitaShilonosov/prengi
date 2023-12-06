@@ -3,10 +3,13 @@
     height: 700px;
     /* Обёртка, спозиционировал по контейнеру */
     &__wrapper { 
-        width: 45%;
+        width: 1140px;
         position: absolute;
         top: 0;
         z-index: 1;
+    }
+    .container {
+        position: relative;
     }
     &__top {
         padding-top: 39px;
@@ -103,7 +106,7 @@
             display: none;
         }
         &__wrapper {
-            width: 80%;
+            width: 1140px;
         }
     }
     @media (min-width: 1201px) {
@@ -136,7 +139,7 @@
             line-height: 24px;
         }
         &__image {
-            left: 49%;
+            left: 55%;
             top: 26.7%;
         }
     }

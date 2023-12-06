@@ -81,7 +81,60 @@
             cursor: pointer;
         }
     }
-
+    /* Адаптируем стрелки под разные мониторы */
+@media (min-width: 1440px) {
+    .slider {
+        width: 1441px;
+        img.next.slick-arrow {
+            position: absolute;
+            top: 87.5%;
+            left: 54.2%;
+            z-index: 2;
+            transform: translateY(-50%);
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        img.prev.slick-arrow {
+            position: absolute;
+            top: 87.5%;
+            left: 45%;
+            transform: translateY(-50%);
+            z-index: 2;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+    
+}
+@media (min-width: 1920px) {
+        width: 1920px;
+        img.prev.slick-arrow {
+            left: 46.2%;
+        }
+        img.next.slick-arrow {
+            left: 53.6%;
+        }
+}
+@media (min-width: 2560px) {
+        width: 2560px;
+        img.next.slick-arrow {
+            left: 52.5%;
+        }
+        img.prev.slick-arrow {
+            left: 47.3%;
+        }
+}
+@media (min-width: 3840px) {
+        width: 3840px;
+        img.next.slick-arrow {
+            left: 51.7%;
+        }
+        img.prev.slick-arrow {
+            left: 48.2%;
+        }
+}
 }
 
 /* Слайдер блока modal */
