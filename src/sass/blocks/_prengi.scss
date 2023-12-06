@@ -1,5 +1,5 @@
 .prengi {
-    height: 896px;
+    min-height: 896px;
     &__top {
         display: flex;
         padding-top: 73px;
@@ -98,8 +98,7 @@
         &__bot {
             flex-direction: column;
             align-items:center;
-            padding-bottom: 10px;
-            
+            padding-bottom: 30px;
         }
     }
     @media (max-width: 576px) {
