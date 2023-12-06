@@ -46,8 +46,8 @@ $('.slider').slick( {
 $('.modal__slider').slick({
   autoplay: true,
   autoplaySpeed: 2000,
-  nextArrow: '<img src="../img/modals/nextarrow.jpg" class="next" alt="">',
-  prevArrow: '<img src="../img//modals/prewarraw.png" class="prev" alt="">',
+  nextArrow: '<img src="img/modals/nextarrow.jpg" class="next" alt="">',
+  prevArrow: '<img src="img//modals/prewarraw.png" class="prev" alt="">',
   responsive: [
     {
       breakpoint : 1441,
