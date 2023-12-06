@@ -1,3 +1,4 @@
+/* Слайдер хедера */
 $('.slider').slick( {
     dots: true,
     arrows: true,
@@ -39,4 +40,26 @@ $('.slider').slick( {
           }
         }
     ]
+});
+
+/* Слайдер блока modals */
+$('.modal__slider').slick({
+  autoplay: true,
+  autoplaySpeed: 2000,
+  nextArrow: '<img src="../img/modals/nextarrow.jpg" class="next" alt="">',
+  prevArrow: '<img src="../img//modals/prewarraw.png" class="prev" alt="">',
+  responsive: [
+    {
+      breakpoint : 1441,
+      settings :{
+        arrows: true
+      }
+    },
+    {
+      breakpoint : 1439,
+      settings : {
+        arrows: false
+      }
+    }
+]
 });

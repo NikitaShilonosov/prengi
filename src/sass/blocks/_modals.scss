@@ -57,11 +57,157 @@
             height: 49px;
             float: right;
             margin-left: 17px;
-            top: 78%;
+            top: 23.4%;
             opacity: 0.4;
           }
         a:last-child:after {
             display: none;
         }
     }
+    &__wrapper {
+        padding-top: 36px;
+        text-align: center;
+    }
+
+    /* Мобильная адаптация */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    &__nav {
+        margin-left: 45px;
+    }
+    .modal__slider {
+        left: 13.9%;
+    }
 }
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    &__nav {
+        padding-left: 0;
+        width: 540px;
+        margin: 25px 0 0 80px ;
+        nav {
+            a {
+                font-size: 12px;
+                padding-right: 9px;
+            }
+            a:after {
+                margin-left: 6px;
+                top: 30.7%;
+                height: 35px;
+            }
+        }
+    }
+    &__img {
+        img {
+            width: 540px;
+        }
+    }
+    &__wrapper {
+        padding-top: 100px;
+    }
+    /* Обратился непосредственно к слайдеру т.к без этого, все картинки в блоке меняли размер */
+    .modal__slider {
+        width: 400px;
+        height: 270px;
+        top: 56%;
+        left: 22.6%;
+        img {
+            width: 396.7px;
+            height: 247.5px;
+            object-fit: cover;
+            object-position: 0%;
+        }
+    }
+
+}
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+    &__nav {
+        margin: 25px 0 0 0 ;
+        nav {
+            a:after {
+                top:35%;
+            }
+        }
+    }
+    .modal__slider {
+        top: 58.7%;
+        left: 13.4%;
+    }
+    
+}
+@media (max-width: 576px) {
+    .container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    &__nav {
+        padding-left: 3px;
+        min-height: 64px;
+        width: 100%;
+        text-align: center;
+        nav {
+            a {
+                padding-right: 5px;
+            }
+        }
+        /* a:after {
+            display: none;
+        } */
+
+        /* Задал для каждого афтера размер и положение полосок */
+        a:after {
+            height: 5px;
+        }
+        a:nth-child(1):after {
+            top: 36.6%;
+            height: 15px;
+            left: 36.2%;
+        }
+        a:nth-child(2):after {
+            top: 36.6%;
+            height: 15px;
+            left: 58.3%;
+        }
+        a:nth-child(3):after {
+            display: none;
+        }
+        a:nth-child(4):after {
+            top: 41.4%;
+            height: 15px;
+            left: 43.2%;
+        }
+        a:nth-child(5):after {
+            top: 41.4%;
+            height: 15px;
+            left: 60.5%;
+        }
+    }
+    &__header {
+        font-size: 27px;
+        padding-top: 30px;
+    }
+    &__img {
+        img {
+            width: 300px;
+        }
+    }
+    .modal__slider {
+        top: 67.5%;
+        left: 15.7%;
+        width: 221px;
+        height: 140px;
+        img {
+            width: 221px;
+            height: 140px;
+        }
+    }
+}
+}
+

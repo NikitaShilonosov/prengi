@@ -1,3 +1,4 @@
+/* Слайдер хедера */
 // Стиль слайдера
 .slider {
     z-index: 0;
@@ -81,4 +82,28 @@
         }
     }
 
+}
+
+/* Слайдер блока modal */
+.modal__slider {
+    top: 38.8%;
+    left: 19.6%;
+    position: absolute;
+    width: 695.3px;
+    height: 438px;
+    img {
+        object-fit: cover;
+    }
+    .prev.slick-arrow {
+        position: absolute;
+        left: -27%;
+        top: 50%;
+        z-index: 1;
+    }
+    .next.slick-arrow {
+        position: absolute;
+        right: -27%;
+        top: 50%;
+        z-index: 1;
+    }
 }
