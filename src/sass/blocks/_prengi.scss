@@ -63,5 +63,57 @@
         font-weight: 700;
         color: #393939;
     }
+    
 
+    /* Мобильная адаптация */
+    @media (max-width: 1200px) {
+        .container {
+            max-width: 960px;
+        }
+        &__item {
+            background-size: cover;
+            background-position: 50% 100%;
+            border: 1px solid rgba(236,236,236, 0.5);
+        }
+    }
+    @media (max-width: 992px) {
+        .container {
+            max-width: 720px;
+        }
+        &__descr {
+            padding-top: 160px;
+        }
+        &__bold {
+            padding-top: 160px;
+        }
+    }
+    @media (max-width: 768px) {
+        .container {
+            max-width: 540px;
+        }
+        &__top {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__bot {
+            flex-direction: column;
+            align-items:center;
+            padding-bottom: 10px;
+            
+        }
+    }
+    @media (max-width: 576px) {
+        .container {
+            max-width: 100%;
+            padding: 0 10px;
+        }
+        &__text {
+            font-size: 40px;
+        }
+        &__item {
+            width: 300px;
+            height: 250px;
+        }
+    }
+    
 }
