@@ -1,0 +1,50 @@
+.advantages {
+    min-height: 1335px;
+    &__header {
+        padding-top: 81px;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 900;
+        color: #393939;
+    }
+    &__wrapper {
+        padding-top: 44px;
+        display: grid;
+        grid-template-columns: repeat(2, 570px);
+    }
+    &__desc {
+        margin-top: 99.4px;
+        text-align: center;
+        width: 570px;
+        height: 162.6px;
+        background-color: rgb(0, 0, 0 , 0.4);
+        font-size: 23px;
+        font-weight: 400;
+        color: #ffffff;
+        p {
+            padding-top: 31.9px;
+        }
+    }
+    &__item {
+        width: 570px;
+        height: 355px;
+    }
+    &__item:nth-child(1) {
+        background: url('../img/advantages/clocks.jpg') no-repeat center center / cover;
+    }
+    &__item:nth-child(2) {
+        background: url('../img/advantages/arm.jpg') no-repeat center center / cover;
+    }
+    &__item:nth-child(3) {
+        background: url('../img/advantages/globus.jpg') no-repeat center center / cover;
+    }
+    &__item:nth-child(4) {
+        background: url('../img/advantages/phone.jpg') no-repeat center center / cover;
+    }
+    &__item:nth-child(5) {
+        background: url('../img/advantages/jacket.jpg') no-repeat center center / cover;
+    }
+    &__item:nth-child(6) {
+        background: url('../img/advantages/bankcard.jpg') no-repeat center center / cover;
+    }
+}
