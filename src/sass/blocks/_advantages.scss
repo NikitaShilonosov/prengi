@@ -48,3 +48,87 @@
         background: url('../img/advantages/bankcard.jpg') no-repeat center center / cover;
     }
 }
+
+/* Мобильная адаптация  */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    .advantages {
+        &__item {
+            width: 480px;
+            height: 300px;
+        }
+        &__desc {
+            width: 480px;
+        }
+        &__wrapper {
+            grid-template-columns: repeat(2,480px);
+        }
+    }
+}
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    .advantages {
+        &__wrapper {
+        grid-template-columns: repeat(2,360px);
+    }
+    &__item {
+        width: 360px;
+    }
+    &__desc {
+        width: 360px;
+    }
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+    .advantages {
+        &__wrapper {
+            grid-template-columns: repeat(1,360px);
+            justify-content: center;
+            row-gap: 10px;
+        }
+        &__header {
+            padding-top: 20px;
+        }
+    }
+}
+@media (max-width: 576px) {
+    .container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    .advantages {
+        &__wrapper {
+            grid-template-columns: repeat(1, 310px);
+        }
+        &__item {
+            width: 310px;
+        }
+        &__desc {
+            width: 310px;
+            font-size: 20px;
+        }
+        &__item:nth-child(2) {
+                p {
+                    padding-top: 50px;
+                }
+        }
+        &__item:nth-child(5) {
+                p {
+                  padding-top: 50px;
+                }
+        }
+        &__item:nth-child(6) {
+            p {
+              padding-top: 50px;
+            }
+    }
+        
+    }
+}
