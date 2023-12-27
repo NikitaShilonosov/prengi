@@ -1,0 +1,73 @@
+.connection {
+    height: 690px;
+    
+    &__img {
+        text-align: center;
+        padding-top: 80px;
+    }
+    &__text {
+        padding-top: 74px;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 900;
+        color: #393939;
+    }
+    &__button {
+        padding-top: 30px;
+        text-align: center;
+        button {
+            /* Стили для кнопки */
+            width: 241px;
+            height: 60px;
+            background-color: #00c2f0;
+            box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.07);
+            outline: none;
+            border: none;
+            border-radius: 5px;
+            /* Стили для текста */
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #ffffff;
+            transition: all 0.3s;
+            &:hover {
+                box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.7),
+                            1px 2px 4px 0px rgba(0, 0, 0, 0.7),
+                            2px 4px 8px 0px rgba(0, 0, 0, 0.7),
+                            2px 4px 16px 0px rgba(0, 0, 0, 0.7);
+                transform: translateY(-5px);
+                transform: translateX(-7px);
+                transition: all 0.3s;
+            }
+        }
+    }
+
+    /* Мобильная адаптация */
+    @media (max-width: 768px) {
+        .container {
+            max-width: 540px;
+        }
+        &__text {
+            font-size: 20px;
+        }
+        &__button {
+            button {
+                width: 141px;
+                height: 50px;
+                font-size: 13px;
+            }
+        }
+    }
+    @media (max-width: 576px) {
+        .container {
+            max-width: 100%;
+            padding: 0 10px;
+        }
+        &__img {
+            img {
+                width: 200px;
+                height: 200px;
+            }
+        }
+    }
+}
