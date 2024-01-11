@@ -1,0 +1,48 @@
+.footer {
+    background-color: #0082a1;
+    min-height: 497px;
+    &__wrapper {
+        padding-top: 49px;
+        display: flex;
+    }
+    &__aboutcompany { /* - отодвигаем блок о компании */
+        padding-right: 114px;
+    }
+    &__industries {
+        padding-right: 82px;
+    }
+    &__header {
+        font-size: 16px;
+        font-weight: 700;
+        color: #ffffff;
+    }
+    &__text {
+        font-size: 14px;
+        font-weight: 300;
+        color: #ffffff;
+        width: 379px;
+        text-align-last: left;
+    }
+    &__img {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    &__modals {  /* - отодвигаем блок с модулем */
+        padding-right: 73px;
+    }
+    &__ul {
+        li {
+            list-style: none;
+            a {
+                font-size: 14px;
+                font-weight: 300;
+                color: #ffffff;
+                text-decoration: none;
+                &:hover {
+                    color : #09aad3;
+                    transition: all 0.5s;
+                }
+            }
+        }
+    }
+}
