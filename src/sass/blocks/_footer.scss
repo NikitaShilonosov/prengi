@@ -45,4 +45,120 @@
             }
         }
     }
+    &__hr {
+        width: 1171px;
+        height: 1px;
+        opacity: 0.3;
+        padding-top: 44px;
+    }
+    &__ink {
+        padding-top: 36px;
+        padding-bottom: 40px;
+        font-size: 13px;
+        font-weight: 300;
+        color: #ffffff;
+        text-align: center;
+    }
+    &__description {
+        text-align: center;
+        font-size: 10px;
+        color:#535e61
+    }
+
+    /* Мобильная адаптация */
+    @media (max-width: 1200px) {
+        .container {
+            max-width: 960px;
+        }
+        &__wrapper {
+            padding-top: 30px;
+        }
+        &__header {
+            font-size: 14px;
+        }
+        &__text {
+            font-size: 12px;
+        }
+        &__ul {
+            li {
+                a {
+                    font-size: 12px;
+                }
+            }
+        }
+        &__hr {
+            width: 960px;
+        }
+        &__aboutcompany {
+            padding-right: 0;
+        }
+    }
+    @media (max-width: 992px) {
+        .container {
+            max-width: 720px;
+        }
+        &__wrapper {
+            text-align: center;
+            justify-content: center;
+            display: grid;
+            grid-template-columns: repeat(1, 350px);
+            column-gap: 0;
+        }
+        &__modals {
+            padding-top: 10px;
+            padding-right: 0;
+        }
+        &__industries {
+            padding-right: 0;
+        }
+        &__text {
+            text-align: center;
+            text-align-last:unset;
+        }
+        &__hr {
+            padding-top: 20px;
+            width: 720px;
+        }
+    }
+    @media (max-width: 768px) {
+        .container {
+            max-width: 540px;
+        }
+        &__hr {
+            width: 547px;
+        }
+        &__description {
+            br {
+                display: none;
+            }
+        }
+    }
+    @media (max-width: 576px) {
+        .container {
+            max-width: 100%;
+            padding: 0 10px;
+        }
+        &__wrapper {
+            grid-template-columns: unset;
+        }
+        &__text {
+            width: 333px;
+            br {
+                display: none;
+            }
+        }
+        &__hr {
+            width: 300px;
+        }
+        &__aboutcompany {
+            width: 320px;
+        }
+        &__text {
+            width: 320px;
+        }
+
+    }
+    
 }
+
+
