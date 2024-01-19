@@ -56,3 +56,20 @@
         height: 50px;
     }
 }
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+    .btn-up {
+        right: 6px;
+    }
+}
+@media (max-width: 576px) {
+    .container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    .btn-up {
+        right: 6px;
+    }
+}
